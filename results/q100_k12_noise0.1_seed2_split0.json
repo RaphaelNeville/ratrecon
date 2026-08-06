@@ -1,0 +1,32 @@
+{
+  "config": {
+    "qmax": 100,
+    "digits": 12,
+    "noise": 0.1,
+    "epochs": 30,
+    "batch": 256,
+    "aug": 6,
+    "eval_draws": 5,
+    "seed": 2,
+    "split_seed": 0,
+    "output_dir": "results"
+  },
+  "rnn": {
+    "clean_top1": 0.6163934469223022,
+    "clean_top5": 0.9836065769195557,
+    "noisy_top1": 0.48852459192276004,
+    "noisy_top5": 0.8957377076148986
+  },
+  "exact_clean": {
+    "classical_q_top1": 1.0,
+    "classical_fraction_top1": 1.0,
+    "hybrid_q_top1": 0.9967213114754099,
+    "hybrid_fraction_top1": 0.9967213114754099
+  },
+  "exact_noisy": {
+    "classical_q_top1": 0.699016393442623,
+    "classical_fraction_top1": 0.6911475409836065,
+    "hybrid_q_top1": 0.72,
+    "hybrid_fraction_top1": 0.6970491803278689
+  }
+}
