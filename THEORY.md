@@ -321,20 +321,20 @@ representable over q) changes the information budget twice over:
   $q, q' \le Q$ within $S$ and reusing $1/(qq')$ would give
   $\max\{qq'\} = Q^2$ again — no sharpening at all. But every admissible
   fraction with denominator dividing some $m \in S$ lies on the grid
-  $\tfrac{1}{L}\mathbb{Z}$ with $L = \operatorname{lcm}(S)$, so distinct
+  $\tfrac{1}{L}\mathbb{Z}$ with $L = \mathop{\mathrm{lcm}}(S)$, so distinct
   admissible fractions satisfy
 
-  $$\left|\frac{p}{q} - \frac{p'}{q'}\right| \;=\; \frac{|pq' - p'q|}{qq'} \;\ge\; \frac{\gcd(q,q')}{qq'} \;=\; \frac{1}{\operatorname{lcm}(q,q')},$$
+  $$\left|\frac{p}{q} - \frac{p'}{q'}\right| \;=\; \frac{|pq' - p'q|}{qq'} \;\ge\; \frac{\gcd(q,q')}{qq'} \;=\; \frac{1}{\mathop{\mathrm{lcm}}(q,q')},$$
 
   with equality attained (Bézout makes $|pq' - p'q|$ range over the nonzero
   multiples of $\gcd(q,q')$). So the family's minimum spacing is *exactly*
   $1/M$ with
 
-  $$M \;=\; \max_{q,q' \in S} \operatorname{lcm}(q,q'),$$
+  $$M \;=\; \max_{q,q' \in S} \mathop{\mathrm{lcm}}(q,q'),$$
 
   and $k$ digits suffice as soon as $10^k \ge M$ — **linear** in the grid
   where the unconstrained bound is quadratic in $Q$. Two refinements matter
-  here. First, $M$ is the worst *pair*, not $\operatorname{lcm}(S)$: for
+  here. First, $M$ is the worst *pair*, not $\mathop{\mathrm{lcm}}(S)$: for
   $S = \{6, 10, 14\}$ the total lcm is $210$, but no two members reach it
   (the worst pair is $(10,14)$ with lcm $70$), so two digits suffice where
   the cruder bound would demand three. Second, this is *sufficient* and based
