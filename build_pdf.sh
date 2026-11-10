@@ -24,7 +24,6 @@ pandoc THEORY.md -o THEORY.pdf \
   --pdf-engine=xelatex --toc --toc-depth=2 \
   --shift-heading-level-by=-1 \
   --include-in-header="$TMP/header.tex" \
-  --metadata subtitle="Notes accompanying the ratrecon library" \
   --metadata author="Raphael Neville" \
   -V documentclass=article -V fontsize=11pt \
   -V linkcolor=blue -V urlcolor=blue -V colorlinks=true
