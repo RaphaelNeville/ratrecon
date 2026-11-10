@@ -1,0 +1,52 @@
+{
+  "config": {
+    "qmax": 100,
+    "digits": 12,
+    "noise": 0.1,
+    "epochs": 30,
+    "batch": 256,
+    "aug": 6,
+    "eval_draws": 5,
+    "seed": 1,
+    "split_seed": 0,
+    "output_dir": "results"
+  },
+  "rnn": {
+    "clean_top1": 0.6327868700027466,
+    "clean_top5": 0.9836065769195557,
+    "noisy_top1": 0.4924590289592743,
+    "noisy_top5": 0.8872131228446961
+  },
+  "exact_clean": {
+    "classical_q_top1": 1.0,
+    "classical_fraction_top1": 1.0,
+    "hybrid_q_top1": 0.9967213114754099,
+    "hybrid_fraction_top1": 0.9967213114754099,
+    "classical_s0_fraction_top1": 1.0,
+    "hybrid_s0_fraction_top1": 0.9967213114754099,
+    "oracle_hybrid_fraction_top1": 1.0,
+    "oracle_hybrid_s0_fraction_top1": 1.0,
+    "nearest_codeword_fraction_top1": 1.0,
+    "nearest_codeword_unique_top1": 1.0
+  },
+  "exact_noisy": {
+    "classical_q_top1": 0.6957377049180329,
+    "classical_fraction_top1": 0.6878688524590164,
+    "hybrid_q_top1": 0.719344262295082,
+    "hybrid_fraction_top1": 0.7009836065573769,
+    "classical_s0_fraction_top1": 0.6957377049180329,
+    "hybrid_s0_fraction_top1": 0.7042622950819672,
+    "oracle_hybrid_fraction_top1": 0.8,
+    "oracle_hybrid_s0_fraction_top1": 0.8144262295081968,
+    "nearest_codeword_fraction_top1": 0.9429508196721312,
+    "nearest_codeword_unique_top1": 0.9186885245901639
+  },
+  "noisy_input_counts": {
+    "inputs": 1525,
+    "nearest_codeword_ties": 77,
+    "changed_in_first_three": 384,
+    "classical_correct_there": 1,
+    "nearest_codeword_correct_there": 297,
+    "nearest_codeword_unique_correct_there": 260
+  }
+}
