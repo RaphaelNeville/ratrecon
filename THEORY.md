@@ -38,9 +38,9 @@ digit-corruption experiment of §7.2 can be reproduced by running
 
 ### 2.1 The uniqueness threshold
 
-**Theorem 1.** *Let $Q \ge 2$. If $10^k \ge Q(Q-1)$ then $\rho_k$ is
+**Theorem 1.** Let $Q \ge 2$. If $10^k \ge Q(Q-1)$ then $\rho_k$ is
 injective on $\mathcal F_Q$: $k$ rounded digits determine $p/q$ with
-$q \le Q$ uniquely. The same holds for truncated digits.*
+$q \le Q$ uniquely. The same holds for truncated digits.
 
 *Proof.* Let $p/q \ne p'/q'$ with $q, q' \le Q$. If $q \ne q'$ then
 $qq' \le Q(Q-1)$, and
@@ -136,8 +136,8 @@ whereas inversion by continued fractions takes $O(k)$ arithmetic steps (on
 integers of $O(k)$ digits, so $O(k^2)$ bit operations with schoolbook
 arithmetic).
 
-**Theorem 2 (Legendre).** *If $|x - p/q| < 1/(2q^2)$ then $p/q$ is a
-convergent of the continued fraction of $x$.*
+**Theorem 2 (Legendre).** If $|x - p/q| < 1/(2q^2)$ then $p/q$ is a
+convergent of the continued fraction of $x$.
 
 The true $p/q$ lies within $10^{-k}/2$ of the centre of the observation
 cell, so when $q^2 < 10^k$ it satisfies Legendre's inequality with $x$ equal
@@ -241,8 +241,8 @@ In passing from the digits to the tree we therefore keep an initial segment of
 the continued-fraction terms $(a_0, a_1, \dots)$ and lose the rest. The length
 of that segment is described by a theorem of Lochs.
 
-**Theorem 3 (Lochs, 1964).** *For almost every $x$, the number $m(k)$ of
-continued-fraction terms determined by the first $k$ decimal digits satisfies*
+**Theorem 3 (Lochs, 1964).** For almost every $x$, the number $m(k)$ of
+continued-fraction terms determined by the first $k$ decimal digits satisfies
 
 $$\frac{m(k)}{k} \longrightarrow \frac{6 \ln 2 \cdot \ln 10}{\pi^2} = 0.9702\ldots$$
 
@@ -424,9 +424,9 @@ representable over $q$.
 
   $$\left|\frac{p}{q} - \frac{p'}{q'}\right| = \frac{|pq' - p'q|}{qq'} \ge \frac{\gcd(q,q')}{qq'} = \frac{1}{\mathop{\mathrm{lcm}}(q,q')},$$
 
-  with equality attained (by Bézout, $|pq' - p'q|$ ranges over the nonzero
-  multiples of $\gcd(q,q')$). Hence the minimum spacing of the family is
-  exactly $1/M$ with
+  with equality attained, because by Bézout $|pq' - p'q|$ ranges over the
+  nonzero multiples of $\gcd(q, q')$. Hence the minimum spacing of the family
+  is exactly $1/M$ with
 
   $$M = \max_{q,q' \in S} \mathop{\mathrm{lcm}}(q,q'),$$
 
